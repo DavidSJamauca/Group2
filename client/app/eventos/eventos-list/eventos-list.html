@@ -2,18 +2,16 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>Nombre </th>
-                <th>Apellido</th>
-                <th>Sexo</th>
-                <th>Email</th>
+                <th>Nombre Evento</th>
+                <th>Lugar</th>
+                <th>Fecha</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="item in vm.usuarios">
                 <td>{{item.nombre}}</td>
-                <td>{{item.apellido}}</td>
-                <td>{{item.sexo}}</td>
-                <td>{{item.email}}</td>
+                <td>{{item.Lugar}}</td>
+                <td>{{item.fecha}}</td>
                 <td><a class="btn btn-primary" ui-sref="usuarios-update({idUsuario:item.id})">Editar</a></td>
             </tr>
         </tbody>
