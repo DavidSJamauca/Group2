@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="images">This is the users-list view.</div>
 <div  ng-repeat="item in vm.users">
     <ul>
@@ -18,3 +19,26 @@
     <ul>
         <p>Rol: {{item.rol.description}}</p>
 </div>
+=======
+<section class="container" ng-cloak="">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nombre </th>
+                <th>Apellido</th>
+                <th>Sexo</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in vm.usuarios">
+                <td>{{item.nombre}}</td>
+                <td>{{item.apellido}}</td>
+                <td>{{item.sexo}}</td>
+                <td>{{item.email}}</td>
+                <td><a class="btn btn-primary" ui-sref="usuarios-update({idUsuario:item.id})">Editar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+>>>>>>> b02431f9df712e47560affb934f0476f2e902e3e

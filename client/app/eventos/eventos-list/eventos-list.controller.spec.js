@@ -1,16 +1,16 @@
 'use strict';
 
-describe('Component: EventosComponent', function () {
+describe('Component: EventosListComponent', function () {
 
   // load the controller's module
   beforeEach(module('grupo2App'));
 
-  var EventosComponent, scope;
+  var EventosListComponent, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($componentController, $rootScope) {
     scope = $rootScope.$new();
-    EventosComponent = $componentController('EventosComponent', {
+    EventosListComponent = $componentController('EventosListComponent', {
       $scope: scope
     });
   }));

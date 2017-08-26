@@ -3,8 +3,12 @@
 angular.module('grupo2App')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('eventos', {
-        url: '/eventos',
-        template: '<eventos></eventos>'
+      .state('eventos-create', {
+        url: '/eventos-create',
+        template: '<eventos-create></eventos-create>'
+      })
+      .state('eventos-list', {
+        url: '/eventos-list',
+        template: '<eventos-list></eventos-list>'
       });
   });

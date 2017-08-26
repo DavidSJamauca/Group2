@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2 class="Register-user">REGISTRO DE USUARIOS</h2>
 <div class="img">
 
@@ -25,3 +26,33 @@
         <ul><button type="submit">Register</button></ul>
     </form>
 </div>
+=======
+<div>This is the register view.</div>
+<h2>Register User</h2>
+<div class="img">
+
+<form  name="userForm" ng-submit="vm.createUser()">
+    <ul >
+        <label class="Color"  for="">First Name</label>
+        <input type="text" ng-model="vm.users.firstName">
+    </ul>
+    <ul>
+        <label class:"Color" for="">Last Name</label>
+        <input type="text" ng-model="vm.users.lastName">
+    </ul>
+    <ul>
+        <label class="Color" for="">Email</label>
+        <input type="text" ng-model="vm.users.email">
+    </ul>
+    <ul>
+        <label class="Color" for="">Password</label>
+        <input type="password" ng-model="vm.users.password">
+    </ul>
+    <ul>
+        <label class="Color" for="">Rol</label>
+        <input type="text" ng-model="vm.users.rol.id">
+    </ul>
+    <ul><button type="submit">Register</button></ul>
+</form>
+</div>
+>>>>>>> b02431f9df712e47560affb934f0476f2e902e3e
