@@ -1,16 +1,9 @@
 'use strict';
 
-class NavbarController {
-  //start-non-standard
-  menu = [{
-    'title': 'Home',
-    'state': 'main'
-  }];
+  class NavbarController {
+    ocultarCollapse(){
+        $('.navbar-collapse').collapse('hide');
 
-  isCollapsed = true;
-  //end-non-standard
-
-  constructor() {
     }
 }
 

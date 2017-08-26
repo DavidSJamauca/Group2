@@ -1,25 +1,28 @@
 <div>This is the register view.</div>
 <h2>Register User</h2>
-<form name="userForm" ng-submit="vm.createUser()">
-    <ul>
-        <label for="">First Name</label>
+<div class="img">
+
+<form  name="userForm" ng-submit="vm.createUser()">
+    <ul >
+        <label class="Color"  for="">First Name</label>
         <input type="text" ng-model="vm.users.firstName">
     </ul>
     <ul>
-        <label for="">Last Name</label>
+        <label class:"Color" for="">Last Name</label>
         <input type="text" ng-model="vm.users.lastName">
     </ul>
     <ul>
-        <label for="">Email</label>
+        <label class="Color" for="">Email</label>
         <input type="text" ng-model="vm.users.email">
     </ul>
     <ul>
-        <label for="">Password</label>
+        <label class="Color" for="">Password</label>
         <input type="password" ng-model="vm.users.password">
     </ul>
     <ul>
-        <label for="">Rol</label>
+        <label class="Color" for="">Rol</label>
         <input type="text" ng-model="vm.users.rol.id">
     </ul>
     <ul><button type="submit">Register</button></ul>
 </form>
+</div>
