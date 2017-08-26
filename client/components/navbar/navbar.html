@@ -1,20 +1,51 @@
-<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">grupo2</a>
+<header class="Header-container">
+    <div class="container">
+        <div class="row Header-containerAlignV">
+            <div class="col-xs-6">
+                <h1>Eventos</h1>
+            </div>
+            <div class="col-xs-6 text-right">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
+                    &#9776;
+                </button>
+                <a href="#" class="Login hidden-xs">Login</a>
+            </div>
+        </div>
     </div>
-    <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active">
-            <a ui-sref="{{item.state}}">{{item.title}}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+</header>
+<!--Header fin-->
+<!--Inicio menu-->
+<div class="MenuContainer">
+    <nav class="collapse navbar navbar-collapse" id="navMenu">
+        <div class="container">
+            <div class="row AlignNavbar">
+                <div class="col-xs-10 col-md-4 col-md-offset-0 AlignItemsNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="" class="navbar-link text-center">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="navbar-link text-center">Usuarios</a>
+                        </li>
+                        <li>
+                            <a href="" class="navbar-link text-center">Asistencias</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                            <span class="input-group-btn">
+                        <button class="btn Btn-adsi">
+                             <span class="hidden-xs hidden-sm">Buscar</span>
+                            <i class="fa fa-search IconSearch visible-xs visible-sm"></i>
+                            </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 </div>
