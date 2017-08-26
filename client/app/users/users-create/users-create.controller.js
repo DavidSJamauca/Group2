@@ -1,28 +1,26 @@
 'use strict';
-(function() {
+(function(){
 
-    class UsersCreateComponent {
-        constructor(usuariosService, $state) {
-            this.usuariosService = usuariosService;
-            this.$state = $state;
-        }
-        createUser() {
-            this.usuariosService.save(this.usuario).$promise
+class UsersCreateComponent {
+  constructor() {
+    this.usersService = usersService;
+  }
+  createUser() {
+            this.usersService.save(this.users).$promise
                 .then(response => {
-                    console.log("Usuario registrado correctamente", response);
-                    this.$state.go('users-list');
+                    console.log("Successfully registered user...", response);
                 })
                 .catch(err => {
-                    console.log("Error al crear el usuario", err);
+                    console.log("Error registering user...", err);
                 })
         }
-    }
+}
 
-    angular.module('grupo2App')
-        .component('usersCreate', {
-            templateUrl: 'app/users/users-create/users-create.html',
-            controller: UsersCreateComponent,
-            controllerAs: 'vm'
-        });
+UsersCreateComponent.$inject = ['usersService'];
+angular.module('grupo2App')
+  .component('usersCreate', {
+    templateUrl: 'app/users/users-create/users-create.html',
+    controller: UsersCreateComponent
+  });
 
 })();

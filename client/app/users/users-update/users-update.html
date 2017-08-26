@@ -1,1 +1,35 @@
-<div>This is the users-update view.</div>
+<div class="Fondo">
+    <div class="container">
+        <h3>Edit Profile</h3>
+        <form name="userForm" ng-submit="vm.updateUser()">
+            <label for="">First Name</label>
+            <input name="firstName" minlength="4" maxlength="40" ng-model="vm.user.firstName" required>
+
+            <label for="">Last Name</label>
+            <input name="lastName" ng-model="vm.user.lastName" required>
+
+            <label for="">Email</label>
+            <input name="email" ng-model="vm.user.email" required>
+
+            
+            <label for="">Nickname</label>
+            <input name="nickname" ng-model="vm.user.nickname" required>
+
+            <label for="">Birthdate</label>
+            <input name="birthdate" ng-model="vm.user.birthdate" required>
+
+            <label for="">Phone</label>
+            <input name="phone" ng-model="vm.user.phone" required>
+
+            <ul class="input-group">
+                <label for="">Sex</label></label>
+                <select class="Sex" ng-model="vm.user.sex">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="O">Otros</option>
+            </ul>
+
+            <input type="submit" value="Actualizar">
+        </form>
+    </div>
+</div>

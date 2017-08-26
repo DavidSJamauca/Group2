@@ -1,1 +1,27 @@
-<div>This is the users-create view.</div>
+<h2 class="Register-user">REGISTRO DE USUARIOS</h2>
+<div class="img">
+
+    <form name="userForm" ng-submit="vm.createUser()">
+        <ul>
+            <label class="Color" for="">First Name</label>
+            <input type="text" ng-model="vm.users.firstName" placeholder="Escriba aqui va su nombre">
+        </ul>
+        <ul>
+            <label class="Color" for="">Last Name</label>
+            <input type="text" ng-model="vm.users.lastName" placeholder="Escriba aqui va sus apellidos">
+        </ul>
+        <ul>
+            <label class="Color" for="">Email</label>
+            <input type="text" ng-model="vm.users.email" placeholder="ejemplo@gmail.com">
+        </ul>
+        <ul>
+            <label class="Color" for="">Password</label>
+            <input type="password" ng-model="vm.users.password" placeholder="Escriba aqui una contraseña">
+        </ul>
+        <ul>
+            <label class="Color" for="">Rol</label>
+            <input type="text" ng-model="vm.users.rol.id">
+        </ul>
+        <ul><button type="submit">Register</button></ul>
+    </form>
+</div>
