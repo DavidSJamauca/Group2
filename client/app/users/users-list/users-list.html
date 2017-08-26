@@ -1,1 +1,20 @@
 <div>This is the users-list view.</div>
+<div ng-repeat="item in vm.users">
+    <ul>
+        <h2>Users</h2>
+    </ul>
+    <ul>
+        <p>Id: {{item.id}}</p>
+    </ul>
+    <ul>
+        <p>First Names: {{item.firstName}}</p>
+    </ul>
+    <ul>
+        <p>Last Name: {{item.lastName}}</p>
+    </ul>
+    <ul>
+        <p>Email: {{item.email}}</p>
+    </ul>
+    <ul>
+        <p>Rol: {{item.rol.description}}</p>
+</div>

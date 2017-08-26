@@ -1,1 +1,25 @@
-<div>This is the users-create view.</div>
+<div>This is the register view.</div>
+<h2>Register User</h2>
+<form name="userForm" ng-submit="vm.createUser()">
+    <ul>
+        <label for="">First Name</label>
+        <input type="text" ng-model="vm.users.firstName">
+    </ul>
+    <ul>
+        <label for="">Last Name</label>
+        <input type="text" ng-model="vm.users.lastName">
+    </ul>
+    <ul>
+        <label for="">Email</label>
+        <input type="text" ng-model="vm.users.email">
+    </ul>
+    <ul>
+        <label for="">Password</label>
+        <input type="password" ng-model="vm.users.password">
+    </ul>
+    <ul>
+        <label for="">Rol</label>
+        <input type="text" ng-model="vm.users.rol.id">
+    </ul>
+    <ul><button type="submit">Register</button></ul>
+</form>
